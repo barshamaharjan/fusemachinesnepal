@@ -64,7 +64,8 @@ textarea {
 
 body {
     font: 16px/1.5 Helvetica, Helvetica Neue, Arial;
-    overflow:hidden;
+    overflow-y: visible;
+    overflow-x: hidden;
 }
 
 .wrapper {

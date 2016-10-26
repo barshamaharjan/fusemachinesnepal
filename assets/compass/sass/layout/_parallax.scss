@@ -18,6 +18,9 @@ section#bg{
         margin:0;
         padding:0;
         height: 100%;
+        #canvas-space{
+            display:none;
+        }
         .parallax-text{
             position:absolute;
             top:50%;
@@ -59,7 +62,7 @@ section#bg{
     // font-size: 43px;
     
     left: 3%;
-    top: 29%;
+    top: 27%;
     font-size: 2.5rem;
     color: #fff;
     font-weight: 900;
