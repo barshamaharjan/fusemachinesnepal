@@ -1,0 +1,82 @@
+section#bg{
+    /*background: $color-bg;*/
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2074b9),color-stop(100%, #35bcb6));
+    background-image: -moz-linear-gradient(top, #2074b9 0%,#35bcb6 100%);
+    background-image: -webkit-linear-gradient(top, #2074b9 0%,#35bcb6 100%);
+    background-image: linear-gradient(to bottom, #2074b9 0%,#35bcb6 100%);
+    height:100vh;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding: 0;
+    height: 100%;
+}
+
+
+    #scene{
+        margin:0;
+        padding:0;
+        height: 100%;
+        .parallax-text{
+            position:absolute;
+            top:50%;
+            left:50%;
+        }
+    }
+
+.base-one{
+    bottom: -4%;
+    left: -9%;
+}
+
+.base-two{
+    bottom:-33px;
+    left: 15%;
+}
+
+.base-three{
+    bottom:-33px;
+    right: 30%;
+}
+
+.base-four{
+    bottom: -19px;
+    right: 12%;
+}
+
+.base-five{
+    bottom: -17px;
+    right: -12%;
+}
+
+.front-text{
+    opacity: 0.6;
+    position: absolute;
+    text-align: center;
+    // left: 3%;
+    // top: 33%;
+    // font-size: 43px;
+    
+    left: 3%;
+    top: 29%;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 900;
+    z-index: 2;
+    right: 0;
+}
+
+.front-text2{
+    opacity: 0.6;
+    position: absolute;
+    text-align: center;
+    left: 3%;
+    top: 40%;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 900;
+    z-index: 2;
+    right: 0;
+  
+} 
