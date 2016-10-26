@@ -133,5 +133,9 @@ $(document).ready(function(){
 	// 	console.log('thisthis',logodown);
 	// 	TweenLite.from(logodown, 2 , {opacity:0,x:-150,ease:Power1.easeOut});
 
+	$(".menu-svg").click(function(){
+		$(".menu-svg").toggleClass("cross");
+	});
+
 
 });

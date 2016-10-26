@@ -1,0 +1,25 @@
+.menu-svg{
+	path{
+		transition: stroke-dashoffset 0.5s ease-in-out,
+		stroke-dasharray 0.5s ease-in-out;
+		stroke-width:40px;
+		stroke-linecap:round;
+		stroke:#a06ba5;
+		#top,#bottom{
+			stroke-dasharray: 240px 910px;
+		}
+		#middle{
+			stroke-dasharray:240px 240px;
+		}
+	}
+
+	.cross path#top, 
+	.cross path#bottom{
+		stroke-dashoffset:-650px;
+	}
+
+	.cross path#middle{
+		stroke-dashoffset:-115px;
+		stroke-dasharray: 1px 220px;
+	}
+}
