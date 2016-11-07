@@ -1,5 +1,4 @@
-
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -30,15 +29,21 @@
               <img src="../assets/img/fmn-logo-down.png" id="logodown" class="prelogo">
         </div>
 
-        <div class="menu-svg">
+        <div class="menu-svg show-hide-menu lines">
           <defs>
             <style type="text/css">
+              svg{
+                position:fixed; 
+                z-index:11;
+                cursor:pointer;
+                right:0;
+              }
               path{
                 transition: stroke-dashoffset 0.5s ease-in-out,
                 stroke-dasharray 0.5s ease-in-out;
-                stroke-width:40px;
+                stroke-width:10px;
                 stroke-linecap:round;
-                stroke:#fff;
+                stroke:#5a5a5a;
                 }
                 
                 path#top,
@@ -52,22 +57,28 @@
 
               .cross path#top, 
               .cross path#bottom{
-                stroke-dashoffset:-650px;
+                stroke-dashoffset:-658px;
               }
 
               .cross path#middle{
                 stroke-dashoffset:-115px;
                 stroke-dasharray: 1px 220px;
               }
+              .lines path#top,
+              .lines path#middle,
+              .lines path#bottom{
+                stroke:#fff;
+              }
             </style>
           </defs>
-          <svg viewBox="0 0 800 600" style="position:absolute; z-index:1;" >
+          <svg viewBox="0 0 800 600" height=100 width=100 >
             <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top" stroke="red" stroke-width="3" fill="none"></path>
             <path d="M300,320 L540,320" id="middle" stroke="red" stroke-width="3"></path>
             <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="bottom" transform="translate(480,320) scale(1,-1) translate(-480,-318)" stroke="red" stroke-width="3" fill="none"></path>
 
           </svg>
         </div>
+
 
         
         <div id="intro">
@@ -97,14 +108,22 @@
                 </section>
 
             </div>
+
+            <div class="menu-slide hide menu-list">
+                <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Culture</li>
+                  <li>Jobs</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
         </div>
 
 
 
-
-
-
-        <div id="main" class="main-container">
+        <!-- <div id="main" class="main-container">
 
             <div id="project01" class="project">
                 <img src="./assets/img/technology.png" />
@@ -163,7 +182,10 @@
             <footer class="wrapper">
                 <h3>2016 &copy; <a href="https://ihatetomatoes.net" target="_blank">fusemachinesnepal</a> | <a href="https://twitter.com/ihatetomatoes" target="_blank">Hattisar</a> | Kathmandu</h3>
             </footer>
-        </div>
+        </div> -->
+
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

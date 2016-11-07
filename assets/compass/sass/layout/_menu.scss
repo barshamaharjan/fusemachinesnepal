@@ -1,25 +1,32 @@
-.menu-svg{
-	path{
-		transition: stroke-dashoffset 0.5s ease-in-out,
-		stroke-dasharray 0.5s ease-in-out;
-		stroke-width:40px;
-		stroke-linecap:round;
-		stroke:#a06ba5;
-		#top,#bottom{
-			stroke-dasharray: 240px 910px;
-		}
-		#middle{
-			stroke-dasharray:240px 240px;
-		}
-	}
-
-	.cross path#top, 
-	.cross path#bottom{
-		stroke-dashoffset:-650px;
-	}
-
-	.cross path#middle{
-		stroke-dashoffset:-115px;
-		stroke-dasharray: 1px 220px;
-	}
+.menu-slide{ 
+    position: fixed;
+    background: #fff;
+    color: #848484;
+    height: 100vh;
+    width: 100%;
+    z-index:10;
+    animation:slideIn .4s ease-out 1;
+    ul{
+    	list-style:none;
+    	padding:8rem 0;
+    	li{
+		    font-size: 3rem;
+		    font-weight: 100;
+		    padding-bottom:20px;
+		    cursor:pointer;
+		    &:hover{
+		    	color:#989898;
+		    }
+    	}
+      }
+      &.hide{
+      	display:none;
+      }
+      
 }
+
+@keyframes slideIn{
+      from {transform: translateX(900px);}
+      to {transform: translateX(0);}
+}
+

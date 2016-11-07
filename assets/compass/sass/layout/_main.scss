@@ -80,9 +80,11 @@ body {
 /* =Main */
 #intro {
     height: 100vh;
+    width:auto;
     background: radial-gradient(circle, #74A6EE 0%, #485CB2 100%);
     text-align: center;
     color: #fff;
+    position:relative;
     opacity:0;
 }
 #intro .content {
