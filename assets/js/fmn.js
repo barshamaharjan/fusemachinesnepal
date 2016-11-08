@@ -34,11 +34,11 @@
 					defaults = {
 						star: {
 							color: 'rgb(255, 255, 255)',
-							width: 5
+							width: 2
 						},
 						line: {
 							color: 'rgb(86, 183, 255)',
-							width: 1
+							width: 0.5
 						},
 						position: {
 							x: 0, // This value will be overwritten at startup

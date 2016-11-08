@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+          <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="../assets/img/f-favicon.png">
+        <title>Fusemachines Nepal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- <link rel="stylesheet" href="../css/normalize.min.css"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href="../css/main.css"> -->
+        <link rel="stylesheet" href="../assets/stylesheets/fusenepalstyles.min.css">
+
+        <script src="./assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+
+
+        <div id="loader">
+            <img src="../assets/img/fmn-logo-up.png" id="logoup" class="prelogo">
+              <img src="../assets/img/fmn-logo-down.png" id="logodown" class="prelogo">
+        </div>
+
+        <div class="menu-svg show-hide-menu lines">
+          <defs>
+            <style type="text/css">
+              svg{
+                position:fixed; 
+                z-index:11;
+                cursor:pointer;
+                right:0;
+              }
+              path{
+                transition: stroke-dashoffset 0.5s ease-in-out;
+                stroke-dasharray 0.5s ease-in-out;
+                stroke-width:10px;
+                stroke-linecap:round;
+                stroke:#5a5a5a;
+                }
+                
+                path#top,
+                path#bottom{
+                  stroke-dasharray: 240px 910px;
+                }
+                path#middle{
+                  stroke-dasharray:240px 240px;
+                }
+
+
+              .cross path#top, 
+              .cross path#bottom{
+                stroke-dashoffset:-658px;
+              }
+
+              .cross path#middle{
+                stroke-dashoffset:-115px;
+                stroke-dasharray: 1px 220px;
+              }
+              .lines path#top,
+              .lines path#middle,
+              .lines path#bottom{
+                stroke:#ccc;
+              }
+            </style>
+          </defs>
+          <svg viewBox="0 0 800 600" height=100 width=100 >
+            <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top" stroke="red" stroke-width="3" fill="none"></path>
+            <path d="M300,320 L540,320" id="middle" stroke="red" stroke-width="3"></path>
+            <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="bottom" transform="translate(480,320) scale(1,-1) translate(-480,-318)" stroke="red" stroke-width="3" fill="none"></path>
+
+          </svg>
+        </div>
+
+
+        
+        <div id="intro">
+            <div class="menu-slide hide menu-list">
+                  <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Culture</li>
+                    <li>Jobs</li>
+                    <li>Contact</li>
+                  </ul>
+            </div>
+        </div>
+
+               <main>
+                      
+            <!-- Start here -->
+            <section class="section-static bcg-white">
+
+                <div class="wrapper">
+                    <h1>We are hiring!</h1>
+
+                    <p class="subtitle">Join Us !</p>
+
+                </div>
+
+            </section>
+
+            <section id="reveal-effect" class="section-static bcg-blue">
+
+                <div class="reveal-wrapper">
+                    <h1>Job Opening</h1>
+
+                    <p class="subtitle">Career opportunities at Fusemachines Nepal span from software engineers to designers to marketers to many other avenues. And we're always on the lookout for hard-working and motivated people who are passionate about their job.</p>
+
+                    <ol class="parts">
+                        <li class="part1">
+                            <h2>Technical Lead</h2>
+                            <p>Vivamus hendrerit in dui arcu sed erat molestie vehicula. Nullam in dui mauris.</p>
+                        </li>
+                        <li class="part2">
+                            <h2>Software Engineer: JavaScript Developer</h2>
+                            <p>Vivamus hendrerit in dui arcu sed erat molestie vehicula. Nullam in dui mauris.</p>
+                        </li>
+                        <li class="part3">
+                            <h2>Data Research Associate</h2>
+                            <p>Vivamus hendrerit in dui arcu sed erat molestie vehicula. Nullam in dui mauris.</p>
+                        </li>
+                        <li class="part4">
+                            <h2>Telesales Associate (Evening Shift)</h2>
+                            <p>Vivamus hendrerit in dui arcu sed erat molestie vehicula. Nullam in dui mauris.</p>
+                        </li>
+                        <li class="part5">
+                            <h2>Sr. Operations Officer</h2>
+                            <p>Vivamus hendrerit in dui arcu sed erat molestie vehicula. Nullam in dui mauris.</p>
+                        </li>
+                        <li class="part6">
+                            <h2>Ready to Join Us ?</h2>
+                            <p>Click Here</p>
+                        </li>
+                    </ol>
+
+                </div>
+
+            </section> 
+
+            <section class="section-static bcg-white">
+
+                <div class="reveal-wrapper">
+                    <h1>Join Us</h1>
+
+                    <p class="subtitle">Join Us Text !</p>
+
+                </div>
+
+            </section>
+
+        </main><!-- /main -->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="../assets/js/parallax.js"></script>
+            <!-- Canvas animation required scripts -->
+        <script src="../assets/js/Stats.js"></script>
+        <script src="../assets/js/zepto.min.js"></script>
+        <script src="../assets/js/fmn.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+        <script src="../assets/js/main.js"></script>
+
+    </body>
+</html>
+
+

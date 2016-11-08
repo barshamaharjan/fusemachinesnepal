@@ -1,7 +1,17 @@
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1400px) {
+	/* =Menu */
+		.menu-slide{
+			width: 25%;
+	    	left: 75%;
+	    	opacity:0.8;
+
+		}
     /* =General */
 
     /* =Header */
 
     /* =Footer */
+    #canvas-space{
+        display:initial!important;
+    }
 }

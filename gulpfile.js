@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
+    compass = require('gulp-compass'),
     livereload = require('gulp-livereload'),
     lr = require('tiny-lr'),
     server = lr(),
@@ -100,8 +101,20 @@ gulp.task('html', function() {
         .pipe(notify({ message: 'HTML task complete' }));
 })
 
+//Compass
+gulp.task('compass', function() {
+     gulp.src('./assets/compass/sass/fusenepalstyles.min.scss')
+   .pipe(compass({
+     css: 'assets/stylesheets',
+     sass: 'assets/compass/sass',
+     image: 'assets/img'
+   }))
+   .pipe(minifycss())
+   .pipe(gulp.dest('assets/stylesheets'));
+});
+
 // Default task
-gulp.task('default', ['copy','css','scripts', 'img', 'html', 'watch']);
+gulp.task('default', ['copy','css','scripts', 'img', 'html',  'compass', 'watch']);
 
 // Watch
 gulp.task('watch', function() {
@@ -113,13 +126,16 @@ gulp.task('watch', function() {
     }
 
     // Watch .scss files
-    gulp.watch('assets/**/*.scss', ['styles']);
+    //gulp.watch('assets/**/*.scss', ['styles']);
 
     // Watch .js files
     gulp.watch('assets/js/**/*.js', ['scripts']);
 
     // Watch image files
     gulp.watch('assets/img/**/*', ['images']);
+
+    // Watch .scss files
+    gulp.watch('assets/compass/sass/**/*.scss', ['compass']);
 
     // Watch .md files
     // gulp.watch('jade/md/*.md', ['jade']);  // triggers jade task when markdown file changes

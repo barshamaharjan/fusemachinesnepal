@@ -18,6 +18,9 @@ section#bg{
         margin:0;
         padding:0;
         height: 100%;
+        li{
+            list-style:none;
+        }
         #canvas-space{
             display:none;
         }
