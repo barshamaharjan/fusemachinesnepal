@@ -4,12 +4,19 @@
 	 .front-text{
     	top:34%;
     }
+
 }
 
 @media only screen and (min-width: 480px) {
     /* =Parallax */
         #canvas-space{
             display:initial!important;
+        }
+
+        ul#scene{
+        li{
+        	font-size:3.5rem;
+          }
         }
 
     /* =Header */
