@@ -66,6 +66,7 @@ body {
     font: 16px/1.5 'Open Sans', sans-serif;
     overflow-y: visible;
     overflow-x: hidden;
+    color:#545454;
 }
 
 .wrapper {
@@ -90,13 +91,15 @@ body {
     }
 }
 
-
 #intro .content {
     position: absolute;
     width: 100%;
     height: 100%;
     }
 
+    .hide{
+            display:none;
+          } 
 
 // .project {
 //     text-align: center;
@@ -194,7 +197,6 @@ body {
 //     background-color:#ccc;
 // }
 
-
 // .content-wrapper {
 //     width: 90%;
 //     margin: 0 auto;
@@ -202,17 +204,80 @@ body {
 //     position: relative;
 //     z-index: 2;
 // }
-
-
-
 //team page
 
 #slide00, #slide02, #slide04{
     background-color:#fff;
 }
 
-#slide01, #slide03, #slide05{
+#slide03, #slide05{
     background-color: #ccc;
+}
+
+#slide01{
+    background: radial-gradient(circle , #1c8fc7 20%, #00072a 100%);
+    .slide-bg01{
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background: url(../img/about-tech1.png) no-repeat;
+        background-size: 80%;
+        background-position: center top;
+    }
+    .slide-wrapper{
+        h1{
+            color: #95e8ff;
+        }
+        p{
+            color:#b9f0ff;
+        }
+    }
+}
+
+#slide02{
+    background: #fff;
+    .slide-bg02{
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background: url(../img/about-design2.png) no-repeat;
+        background-size: 100%;
+        background-position: center bottom;
+    }
+    .slide-wrapper{
+        h1{
+            color: #464646;
+        }
+        p{
+            color:#4e4e4e;
+        }
+    }
+}
+
+#slide03{
+    // background: linear-gradient(to right,#c3c4c9,#efefef);
+    .slide-bg03{
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background: url(../img/img_background.jpg) no-repeat;
+        background-size: 100%;
+        background-position: center top;
+    }
+    .slide-wrapper{
+        h1{
+            color: #ececec;
+        }
+        p{
+            color:#ececec;
+        }
+    }
 }
 
 .slide{
@@ -262,7 +327,6 @@ body {
     clip: rect(auto,auto,auto,auto);
 }
 
-
 .reveal-wrapper {
     width: 90%;
     margin: 0 auto;
@@ -311,8 +375,8 @@ body {
         text-align: center;
     }
     .subtitle {
-        font-size: 1.5em;
-        max-width: 400px;
+        font-size: 1em;
+        max-width: 550px;
         margin: 0 auto;
     }
     .parts {

@@ -3,7 +3,7 @@
 		.menu-slide{
 			width: 25%;
 	    	left: 75%;
-	    	opacity:0.8;
+	    	opacity:0.9;
 
 		}
     /* =General */
@@ -19,5 +19,21 @@
 
     #canvas-space{
         display:initial!important;
+    }
+
+    .slide{
+    	.img{
+    		top: 45%;
+    		left: 43%;
+    	}
+    	.slide-wrapper{
+    		top: 33%;
+    		left: 50%;
+    		width: 31%;
+    		&.slide-unpinned{
+		        left:35%;
+		        text-align:center;
+    		}
+    	}
     }
 }

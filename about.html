@@ -37,10 +37,18 @@
                 z-index:11;
                 cursor:pointer;
                 right:0;
+                background-color: rgba(255, 255, 255, 0.09);
+              }
+              .svg-border{
+                border-bottom: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+              }
+              .svg-border.no-border{
+                border:none;
               }
               path{
                 transition: stroke-dashoffset 0.5s ease-in-out;
-                stroke-dasharray 0.5s ease-in-out;
+                stroke-dasharray: 0.5s ease-in-out;
                 stroke-width:10px;
                 stroke-linecap:round;
                 stroke:#5a5a5a;
@@ -67,11 +75,11 @@
               .lines path#top,
               .lines path#middle,
               .lines path#bottom{
-                stroke:#ccc;
+                stroke:#949494;
               }
             </style>
           </defs>
-          <svg viewBox="0 0 800 600" height=100 width=100 >
+          <svg viewBox="0 0 800 600" height=100 width=100 class="svg-border no-border">
             <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top" stroke="red" stroke-width="3" fill="none"></path>
             <path d="M300,320 L540,320" id="middle" stroke="red" stroke-width="3"></path>
             <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="bottom" transform="translate(480,320) scale(1,-1) translate(-480,-318)" stroke="red" stroke-width="3" fill="none"></path>
@@ -87,7 +95,7 @@
                     <li>Home</li>
                     <li>About</li>
                     <li>Culture</li>
-                    <li>Jobs</li>
+                    <li>Career</li>
                     <li>Contact</li>
                   </ul>
             </div>
@@ -95,38 +103,41 @@
 
         <div class="main" id="main-container">
           <article id="slide00" class="slide">
-            <div class="slide-wrapper">
-              <h1>This is the introduction</h1>
-              <p>This is the text</p>
+            <div class="slide-wrapper slide-unpinned">
+              <h1>What we do</h1>
+              <p>We create intelligent software solutions that transform brands, grow businesses and make people's lives easier.</p>
             </div>
           </article>
 
           <article id="slide01" class="slide">
+            <div class="slide-bg01"></div>
             <div class="pin-wrapper">
               <div class="img"></div>
               <div class="slide-wrapper">
-                <h1>First Para Title</h1>
-                <p>Paragraph of first slider</p>
+                <h1>Technology</h1>
+                <p>They call us the tech team and we invent solutions. With Artificial Intelligence at the heart of our creation, we build awesome products. No application is ever too simple and no system is too complex. We code, we scale and we validate. If that doesn't work, then we exterminate (bugs that is).</p>
               </div>
             </div>
           </article>
 
           <article id="slide02" class="slide">
+            <div class="slide-bg02"></div>
             <div class="pin-wrapper">
               <div class="img"></div>
               <div class="slide-wrapper">
-                <h1>Second article title</h1>
-                <p>Second Paragraph </p>
+                <h1>Design</h1>
+                <p>We are artisans with a taste for all things classy. We believe that the architecture of imagination is undefined and infinite. Elegance of the everyday inspires us and we strive to paint our message with all the colors of the rainbow.</p>
               </div>
             </div>
           </article>
 
           <article id="slide03" class="slide">
+            <div class="slide-bg03"></div>
             <div class="pin-wrapper">
               <div class="img"></div>
               <div class="slide-wrapper">
-                <h1>Third Paragraph</h1>
-                <p>This is third paragraph</p>
+                <h1>Business</h1>
+                <p>Develop business, we do just that. We do everything related to sales development, from generating leads to nurturing them into warm little packages for sales reps to use. It's serious business and we don't mess around. Our clients depend on us.</p>
               </div>
             </div>
           </article>
@@ -135,14 +146,14 @@
             <div class="pin-wrapper">
               <div class="img"></div>
               <div class="slide-wrapper">
-                <h1>Paragraph Fourth</h1>
-                <p>Fourth slider</p>
+                <h1>Content</h1>
+                <p>We are the voice of the company and we speak only in words. We like to do things a bit differently and if they don't add up sometimes, it's because we're avant-garde. We write creative bodies of texts combined with serious industry information to give some food for thought for everyone.</p>
               </div>
             </div>
           </article>
 
           <article id="slide05" class="slide">
-              <div class="slide-wrapper">
+              <div class="slide-wrapper slide-unpinned">
                 <h1>Unpinned Paragraph</h1>
                 <p>Last unpinned Paragraph</p>
               </div>

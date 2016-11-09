@@ -128,12 +128,15 @@ $(document).ready(function(){
 
 	$(".menu-svg").click(function(){
 		$(".menu-svg").toggleClass("cross");
+		$(".svg-border").toggleClass("no-border");
 	});
 
 	$("div.show-hide-menu").click(function(){
 		$("div.menu-list").toggleClass("hide");
 		$("div.show-hide-menu").toggleClass("lines");
 	});
+
+
 
 	var controller = new ScrollMagic.Controller();
 
