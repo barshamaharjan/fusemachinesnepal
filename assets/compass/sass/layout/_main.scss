@@ -96,122 +96,92 @@ body {
     width: 100%;
     height: 100%;
     }
-
     .hide{
-            display:none;
-          } 
+        display:none;
+    } 
 
-// .project {
-//     text-align: center;
-//     padding: 90px 0 190px 0;
-//     border-bottom: 1px #ebebeb solid;
-//     opacity: 0;
-//     transform: translateY(50px);
-//     transition: all 1s ease-out;
-// }
-// .project.fade-in {
-//     opacity: 1;
-//     /*transform: translateY(0);*/
-// }
 
-// .project img {
-//     width: 100px;
-//     height: 100px;
-// }
-
-// .project.penpic{
-//     border-bottom:none;
-//     padding:0;
-//     img{
-//         height: auto;
-//         width: 3%;
-//     }
-// }
-// .project p {
-//     max-width: 500px;
-//     margin: 0 auto;
-//     color: #808080;
-//     &.penone{
-//         max-width: 300px;
-//         position: absolute;
-//         left: 24%;
-//         top: 22%;
-//     }
-//     &.pentwo{
-//         max-width: 300px;
-//         position: absolute;
-//         right: 24%;
-//         top: 54%;
-//     }
-
-// }
-// #project01 h2 {
-//     color: #3DB3CE;
-// }
-// #project02 h2 {
-//     color: #75C695;
-// }
-// #project03 h2 {
-//     color: #F5876F;
-// }
-
-// #project04{
-//     background-color:#fff;
-//     padding:63px 0;
-// }
-
-// #project05{
-//     background-color:#fff;
-//     transform: translateY(-262px);
-//     img{
-//         width: 2.6%;
-//         margin-left: -6px;
-//     }
-// }
-
-// #main {
-//     position: relative;
-//     background-color: #FFF;
-// }
-// .bcg-parallax {
-//     padding: 150px 0;
-//     color: #fff;
-//     background-color: #000;
-//     text-align: center;
-//     position: relative;
-//     overflow: hidden;
-// }
-// .bcg {
-//     background: url('../img/photo2.jpg') no-repeat;
-//     background-size: cover;
-//     position: absolute;
-//     width: 100%;
-//     height: 136%;
-//     top: 0;
-//     z-index: 1;
-//     opacity: 0.7;
-// }
-
-// #discover{
-//     position:relative;
-//     background-color:#ccc;
-// }
-
-// .content-wrapper {
-//     width: 90%;
-//     margin: 0 auto;
-//     max-width: 1140px;
-//     position: relative;
-//     z-index: 2;
-// }
-//team page
-
-#slide00, #slide02, #slide04{
-    background-color:#fff;
+.project {
+    text-align: center;
+    padding: 90px 0 190px 0;
+    border-bottom: 1px #ebebeb solid;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.project.fade-in {
+    opacity: 1;
 }
 
-#slide03, #slide05{
-    background-color: #ccc;
+.project img {
+    width: 100px;
+    height: 100px;
+}
+
+
+#project01 h2 {
+    color: #3DB3CE;
+}
+#project02 h2 {
+    color: #75C695;
+}
+#project03 h2 {
+    color: #F5876F;
+}
+
+#project04{
+    background-color:#fff;
+    padding:63px 0;
+}
+
+#project05{
+    background-color:#fff;
+    transform: translateY(-262px);
+    img{
+        width: 2.6%;
+        margin-left: -6px;
+    }
+}
+
+#main {
+    position: relative;
+    background-color: #FFF;
+}
+.bcg-parallax {
+    padding: 150px 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.bcg {
+    background: url('../assets/img/photo2.jpg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 136%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+#discover{
+    position:relative;
+    background-color:#ccc;
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+}
+//team page
+
+#slide04{
+    background-color:#fff;
 }
 
 #slide01{
@@ -222,12 +192,12 @@ body {
         height: 100%;
         width: 100%;
         left: 0;
-        background: url(../img/about-tech1.png) no-repeat;
+        background: url(../assets/img/about-tech1.png) no-repeat;
         background-size: 80%;
         background-position: center top;
     }
     .slide-wrapper{
-        h1{
+        h2{
             color: #95e8ff;
         }
         p{
@@ -244,12 +214,12 @@ body {
         height: 100%;
         width: 100%;
         left: 0;
-        background: url(../img/about-design2.png) no-repeat;
+        background: url(../assets/img/about-design2.png) no-repeat;
         background-size: 100%;
-        background-position: center bottom;
+        background-position: center;
     }
     .slide-wrapper{
-        h1{
+        h2{
             color: #464646;
         }
         p{
@@ -259,19 +229,19 @@ body {
 }
 
 #slide03{
-    // background: linear-gradient(to right,#c3c4c9,#efefef);
+    background: linear-gradient(to right,#c3c4c9,#efefef);
     .slide-bg03{
         position: absolute;
         top: 0%;
         height: 100%;
         width: 100%;
         left: 0;
-        background: url(../img/img_background.jpg) no-repeat;
+        background: url(../assets/img/img_background.jpg) no-repeat;
         background-size: 100%;
         background-position: center top;
     }
     .slide-wrapper{
-        h1{
+        h2{
             color: #ececec;
         }
         p{
@@ -292,6 +262,13 @@ body {
             position: absolute;
             top: 37%;
             left: 55%;
+                h2{
+                    font-size: 3.8rem;
+                    margin-bottom: 24px;
+                }
+                p{
+                    font-size:1.5rem;
+                }
             }
         .img{
             position: absolute;
@@ -299,21 +276,69 @@ body {
             left: 50%;
             height:418px;
             width:700px;
-            background: url('../img/crossreveal/img_macbook01.png') no-repeat top left;
+            background: url('../assets/img/crossreveal/about-replace.png') no-repeat top left;
             transform:translate(-90%,-43%);
+            &.img-aboutbg{
+                height: 100%;
+                top: 45%;
+                left: 117%;
+                background-size: 65%;
+                width: 91%;
+            }
+    }
+    &#slide05{
+        text-align:left;
+        background-color:#002235;
+        height:50vh;
+        color:#dcf2ff;
+        ul{
+            list-style:none;
+            li{
+                margin-top: 8px;
+                font-size: 1.4rem;
+                a{
+                    color:#dcf2ff;
+                    text-decoration: none;
+                }
+            }
+        }
+        .one-wrapper{
+            position:absolute;
+            left:-66%;
+            img{
+                height:32px;
+                filter: hue-rotate(0) saturate(0) brightness(400%);
+                -webkit-filter: hue-rotate(0) saturate(0) brightness(400%);
+            }
+            li{
+                font-size: 1.04rem;
+            }
+        }
+        .two-wrapper{
+            position:absolute;
+            left:25%;
+        }
+        .three-wrapper{
+            position:absolute;
+            left:100%;
+        }
     }
 }
 
+#slide01 .img{
+  background-image: url('../assets/img/crossreveal/img-tech.png');
+}
+
 #slide02 .img{
-  background-image: url('../img/crossreveal/img_macbook02.png');
+  background-image: url('../assets/img/crossreveal/img-design.png');
 }
 
 #slide03 .img{
-  background-image: url('../img/crossreveal/img_macbook01.png');
+  background-image: url('../assets/img/crossreveal/img-business.png');
 }
 
 #slide04 .img{
-  background-image: url('../img/crossreveal/img_macbook02.png');
+  background-image: url('../assets/img/crossreveal/img-content.png');
 }
 
 #slide02 .pin-wrapper,
@@ -335,9 +360,7 @@ body {
     z-index: 2;
 }
 
-.bcg-blue {
-    background-color: #E8F4FF;
-}
+
 .bcg-green {
     background-color: #D0FDEF;
 }
@@ -387,7 +410,7 @@ body {
     .parts li {
         margin-bottom: 60px;
         overflow: hidden;
-        background: url('../img/img_pen.png') no-repeat 50% 0;
+        background: url('../assets/img/img_pen.png') no-repeat 50% 0;
         background-size: 90px auto;
     }
     .parts h2 {
@@ -396,7 +419,6 @@ body {
         float: left;
         text-align: right;
         vertical-align: top;
-        /*background-color: pink;*/
     }
     .parts p {
         font-size: 18px;
@@ -404,7 +426,6 @@ body {
         margin: 0 0 0 20%;
         float: left;
         text-align: left;
-        /*background-color: yellow;*/
     }
     .parts li.part1 {
         background-position: 50% 6px;
@@ -415,9 +436,8 @@ body {
         min-height: 370px;
     }
 
-    /* this is the pen body */
     .parts li.part3 {
-        background: url('../img/img_pen-body.png') no-repeat 50% 0;
+        background: url('../assets/img/img_pen-body.png') no-repeat 50% 0;
         background-size: 90px auto;
         min-height: 580px;
         z-index: 3;
@@ -464,3 +484,81 @@ body {
     header {
         padding: 100px 0;
     }
+
+
+
+
+
+
+
+// #intro {
+//     height: 100vh;
+//     background: radial-gradient(circle, #74A6EE 0%, #485CB2 100%);
+//     text-align: center;
+//     color: #fff;
+// }
+// #intro .content {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+// .project {
+//     text-align: center;
+//     padding: 200px 0;
+//     border-bottom: 1px #ebebeb solid;
+//     opacity: 0;
+//     /*transform: translateY(50px);*/
+//     transition: all 1s ease-out;
+// }
+// .project.fade-in {
+//     opacity: 1;
+//     /*transform: translateY(0);*/
+// }
+// .project img {
+//     width: 180px;
+//     height: 180px;
+// }
+// .project p {
+//     max-width: 300px;
+//     margin: 0 auto;
+//     color: #294D67;
+// }
+// #project01 h2 {
+//     color: #3DB3CE;
+// }
+// #project02 h2 {
+//     color: #75C695;
+// }
+// #project03 h2 {
+//     color: #F5876F;
+// }
+// #main {
+//     position: relative;
+//     background-color: #FFF;
+// }
+// .bcg-parallax {
+//     padding: 150px 0;
+//     color: #fff;
+//     background-color: #000;
+//     text-align: center;
+//     position: relative;
+//     overflow: hidden;
+// }
+// .bcg {
+//     background: url('../assets/img/img_background.jpg') no-repeat;
+//     background-size: cover;
+//     position: absolute;
+//     width: 100%;
+//     height: 150%;
+//     top: 0;
+//     z-index: 1;
+//     opacity: 0.7;
+// }
+// .content-wrapper {
+//     width: 90%;
+//     margin: 0 auto;
+//     max-width: 1140px;
+//     position: relative;
+//     z-index: 2;
+// }

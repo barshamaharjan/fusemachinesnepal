@@ -1,0 +1,42 @@
+.button-container {
+    position: relative;
+} 
+
+a.button {
+    text-decoration: none;
+    text-align:center;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.7);
+    padding: 8px 0;
+    position: absolute;
+    top: -64px;
+    left: 47.1%;
+    transform: translateX(-50%);
+}
+.bp {
+    width: 50px;
+    height: 100%;
+    border: 2px rgba(255,255,255,1) solid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.bp-mid {
+    left: 50px;
+    border-width: 1px 0;
+}
+.bp-left {
+    border-width: 1px 0 1px 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.bp-right {
+    left: auto;
+    right: 0;
+    border-width: 1px 1px 1px 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

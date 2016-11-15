@@ -3,8 +3,6 @@
 		.menu-slide{
 			width: 25%;
 	    	left: 75%;
-	    	opacity:0.9;
-
 		}
     /* =General */
 
@@ -32,8 +30,68 @@
     		width: 31%;
     		&.slide-unpinned{
 		        left:35%;
-		        text-align:center;
+		        text-align:left;
     		}
+            &.slide-aboutbg{
+                top: 35%;
+                left: 13%!important;
+                text-align: left!important;
+                width: 22%;
+            }
     	}
     }
+    body.main-body{
+    font: 16px/1.5 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #294C67;
+    overflow: hidden;
+    height: 100%;
+    transition: all 1s linear;
+    &.is-active {
+    color:#fff;
+    background-color:#7398ff;
+    
+    } 
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-transform: translate(-50%, -150%);
+            transform: translate(-50%, -150%);
+}
+#lab {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+    width: auto;
+    // height: 675px;
+    overflow:hidden;
+    height:100vh;
+}
+#stage,
+#Petr,
+#Coin,
+h1,
+#BulbIdea {
+    visibility: hidden;
+    opacity: 0;
+}
+#PaperText text {
+    font-weight: 700;
+    font-size: 18px;
+}
+
 }
