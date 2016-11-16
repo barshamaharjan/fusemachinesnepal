@@ -1,5 +1,20 @@
-.menu-slide{ 
-    // border-left: 1px solid #ccc;
+.fmnlogo{
+    position: fixed;
+    z-index:10;
+    .fmn-logo {
+        background: url('../assets/img/fmn.svg') no-repeat top left;
+        height: 56px;
+        width: 200px;
+        background-size: 70%;
+        margin: 23px 30px;
+        &.fmnlogo-h {
+            filter: hue-rotate(0) saturate(0) brightness(400%);
+            -webkit-filter: hue-rotate(0) saturate(0) brightness(400%);
+        }
+    }
+}
+
+.menu-slide{
     position: fixed;
     background: #fff;
     height: 100vh;
@@ -9,7 +24,7 @@
     text-align:center;  
         ul{
         	list-style:none;
-        	padding:10rem 11rem;
+        	padding:7.5rem 11rem;
         	li{
     		    font-size: 3rem;
     		    font-weight: 100;

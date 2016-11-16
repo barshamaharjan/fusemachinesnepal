@@ -246,10 +246,6 @@ $(document).ready(function(){
 		.addTo(controller);
 
 	});
-
-
-
-
 });
 
 
@@ -355,7 +351,7 @@ $(document).ready(function(){
 		var clearTl = new TimelineMax();
 
 		clearTl
-			.set($coin, {x: -90, y: 100, scale: 0.5, transformOrigin: 'center center'})
+			.set($coin, {x: -90, y: 120, scale: 0.5, transformOrigin: 'center center'})
 			.set($MainBulb, {fill: '#ffffff'})
 			.set($Liquids, {stroke: '#ffffff'})
 			.set($Petr, {autoAlpha: 1, x: '1400%', scale: 2.5, transformOrigin: 'bottom center'})
@@ -421,7 +417,7 @@ $(document).ready(function(){
 			
 			// idea out of the head
 			.set($coin, {autoAlpha: 1}, '+=0.3')
-			.to($coin, 3, {rotation: 720, bezier: {curviness: 0.3, values: path}, ease:SlowMo.ease.config(0.8, 0.6, false)})
+			.to($coin, 2, {rotation: 720, bezier: {curviness: 0.3, values: path}, ease:SlowMo.ease.config(0.8, 0.6, false)})
 			.to($h1, 0.2, {y: '+=20px', autoAlpha: 1, ease: Power4.easeInOut}, '-=5.4')
 			.to($h1, 0.1, {y: '+=10px', autoAlpha: 0, ease: Power4.easeInOut}, '-=3.4')
 			.set($h1, {y: '-=30px', text: "We make it happen"}, '-=3.3')
@@ -440,13 +436,13 @@ $(document).ready(function(){
 			.to($pointer, 1.9, {rotation: 20})
 			.staggerTo($part2light, 0.1, {fill: '#F8AD43'}, 0.1, 'part2-lights')
 			.staggerTo($part2light, 0.1, {fill: '#F8876E'}, 0.1, 'part2-lights+=0.3')
-			.staggerTo($part2light, 0.1, {fill: '#73C996'}, 0.1, 'part2-lights+=0.8')
-			.to($meterBcg, 0.1, {fill: '#5AB783'}, 'part2-lights+=0.8')
-			.to($meterStroke, 0.1, {stroke: '#448962'}, 'part2-lights+=1')
-			.to($slider, 1.1, {x: '-=10px', ease:Power4.easeInOut}, 'part2-lights+=1')
-			.set($bulb1, {fill: '#5AB783'}, 'part2-lights+=1.2')
-			.set($bulb2, {fill: '#F8876E'}, 'part2-lights+=1.5')
-			.set($bulb3, {fill: '#F8AD43'}, 'part2-lights+=2');
+			.staggerTo($part2light, 0.1, {fill: '#73C996'}, 0.1, 'part2-lights+=0.6')
+			.to($meterBcg, 0.1, {fill: '#5AB783'}, 'part2-lights+=0.6')
+			.to($meterStroke, 0.1, {stroke: '#448962'}, 'part2-lights+=0.7')
+			.to($slider, 1.1, {x: '-=10px', ease:Power4.easeInOut}, 'part2-lights+=0.7')
+			.set($bulb1, {fill: '#5AB783'}, 'part2-lights+=1')
+			.set($bulb2, {fill: '#F8876E'}, 'part2-lights+=0.8')
+			.set($bulb3, {fill: '#F8AD43'}, 'part2-lights+=1.5');
 
 		return part2TL;
 	}
@@ -489,7 +485,7 @@ $(document).ready(function(){
 			.to($h1, 0.2, {y: '+=20px', autoAlpha: 1, ease: Power4.easeInOut})
 			.to($h1, 0.1, {y: '+=10px', autoAlpha: 0, ease: Power4.easeInOut}, '+=1')
 			.set($h1, {y: '-=30px', text: "8+ Designers"})
-			.to($Liquid02, 0.4, {strokeDashoffset: 0, ease:Power0.easeNone}, '-=0.1')
+			.to($Liquid02, 0.2, {strokeDashoffset: 0, ease:Power0.easeNone}, '-=0.1')
 			
 			// add another one
 			.add('flask02')

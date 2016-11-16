@@ -135,7 +135,7 @@ gulp.task('watch', function() {
     gulp.watch('assets/js/**/*.js', ['scripts']);
 
     // Watch image files
-    gulp.watch('assets/img/**/*', ['images']);
+    gulp.watch('assets/img/**/*', ['img']);
 
     // Watch .scss files
     gulp.watch('assets/compass/sass/**/*.scss', ['compass']);
