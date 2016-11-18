@@ -607,6 +607,90 @@ $(document).ready(function(){
 		$("div.show-hide-menu").toggleClass("lines");
 	});
 
+
+	
+		//Career Modal
+
+		// Get the modal
+		var modal = document.getElementById('myModal');
+		var careerbody = document.getElementById("bodycareer");
+		// Get the button that opens the modal
+		var btn1 = document.getElementById("myBtn");
+		var btn2 = document.getElementById("myBtn1");
+		var btn3 = document.getElementById("myBtn2");
+		var btn4 = document.getElementById("myBtn3");
+		var btn5 = document.getElementById("myBtn4");
+
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on the button, open the modal 
+		btn1.onclick = function() {
+		    modal.style.display = "block";
+		    bodycareer.style.overflow = "hidden";
+		    $('div.modalbodyone').show();
+		    $('div.modalbodytwo').hide();
+		    $('div.modalbodythree').hide();
+		    $('div.modalbodyfour').hide();
+		    $('div.modalbodyfive').hide();
+
+		}
+
+		btn2.onclick = function() {
+		    modal.style.display = "block";
+		    bodycareer.style.overflow = "hidden";
+		    $('div.modalbodyone').hide();
+		    $('div.modalbodytwo').show();
+		    $('div.modalbodythree').hide();
+		    $('div.modalbodyfour').hide();
+		    $('div.modalbodyfive').hide();
+		}
+
+		btn3.onclick = function() {
+		    modal.style.display = "block";
+		    bodycareer.style.overflow = "hidden";
+		    $('div.modalbodyone').hide();
+		    $('div.modalbodytwo').hide();
+		    $('div.modalbodythree').show();
+		    $('div.modalbodyfour').hide();
+		    $('div.modalbodyfive').hide();
+		}
+
+		btn4.onclick = function() {
+		    modal.style.display = "block";
+		    bodycareer.style.overflow = "hidden";
+		    $('div.modalbodyone').hide();
+		    $('div.modalbodytwo').hide();
+		    $('div.modalbodythree').hide();
+		    $('div.modalbodyfour').show();
+		    $('div.modalbodyfive').hide();
+		}
+
+		btn5.onclick = function() {
+		    modal.style.display = "block";
+		    bodycareer.style.overflow = "hidden";
+		    $('div.modalbodyone').hide();
+		    $('div.modalbodytwo').hide();
+		    $('div.modalbodythree').hide();
+		    $('div.modalbodyfour').hide();
+		    $('div.modalbodyfive').show();
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		    modal.style.display = "none";
+		    bodycareer.style.overflow = "visible";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		        bodycareer.style.overflow = "visible";
+		    }
+		}
+
 })(jQuery);
 
 

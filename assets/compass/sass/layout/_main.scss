@@ -286,43 +286,6 @@ body {
                 width: 91%;
             }
     }
-    &#slide05{
-        text-align:left;
-        background-color:#002235;
-        height:50vh;
-        color:#dcf2ff;
-        ul{
-            list-style:none;
-            li{
-                margin-top: 8px;
-                font-size: 1.4rem;
-                a{
-                    color:#dcf2ff;
-                    text-decoration: none;
-                }
-            }
-        }
-        .one-wrapper{
-            position:absolute;
-            left:-66%;
-            img{
-                height:32px;
-                filter: hue-rotate(0) saturate(0) brightness(400%);
-                -webkit-filter: hue-rotate(0) saturate(0) brightness(400%);
-            }
-            li{
-                font-size: 1.04rem;
-            }
-        }
-        .two-wrapper{
-            position:absolute;
-            left:25%;
-        }
-        .three-wrapper{
-            position:absolute;
-            left:100%;
-        }
-    }
 }
 
 #slide01 .img{
@@ -562,3 +525,83 @@ body {
 //     position: relative;
 //     z-index: 2;
 // }
+
+
+//career
+
+
+/* =Header */
+body#bodycareer{
+    background-color: #76c897;
+    color: #2b4d66;
+}
+    #career-header {
+      max-width: 500px;
+      padding-top: 15px;
+      margin: 0 auto;
+      text-align: center; 
+        img {
+            max-width: 100%;
+            display: block; 
+        }
+        .career-joinus{
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-decoration: none;
+            .career-join{
+                font-size: 2rem;
+                background-color: #2b4d66;
+                margin: 0 5px 0 2px;
+                padding: 10px 0; 
+            }
+        }
+        .career-intro {
+            color: #fff;
+            font-size: 30px;  
+            margin-top: 16%;
+            margin-bottom: 50px;
+            line-height: 1.2em; 
+            text-transform: uppercase;
+          }
+
+      .career-list {
+          list-style: none;
+          text-align: center;
+          margin: 0 5px 0 2px;
+          padding: 0;
+          font-size: 20px; 
+            a {
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #2b4d66;
+                background-color: #ebf3f7; 
+                span{
+                  -webkit-transition: all 0.2s ease-out;
+                          transition: all 0.2s ease-out;
+                  position: relative;
+                  left: 0; 
+                  }
+              &:hover{
+                background-color: rgba(235, 243, 247, 0.7); 
+              span {
+                left: 8px;
+                -webkit-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out; 
+                    }
+                }
+              }
+              li {
+                margin: 0 0 1px 0;
+                padding: 0; 
+                }
+            }
+
+            .career-note{
+                font-size: 1.2rem;
+                color: #2b4d66;
+                padding-top: 12px;
+            }
+        
+      }
