@@ -166,7 +166,7 @@ $(document).ready(function(){
 	//pen effect
 
 		// move the pen body up to connect with the first part
-	TweenMax.set('.part3', {y: -572});
+	TweenMax.set('.part3', {y: -600});
 
 	// hide all headings and text
 	//TweenMax.set(['.parts h2, .parts p'], {autoAlpha: 0});
@@ -181,8 +181,8 @@ $(document).ready(function(){
 	var bodyToStartScene = new ScrollMagic.Scene({
 		triggerElement: '.part1',
 		triggerHook: 1,
-		offset: 287,
-		duration: 572
+		offset: 200,
+		duration: 600
 	})
 	.setTween(bodyToStart)
 	.addTo(controller);
@@ -228,7 +228,7 @@ $(document).ready(function(){
 	var p4ToStartScene = new ScrollMagic.Scene({
 		triggerElement: '.part1',
 		triggerHook: 1,
-		duration: 557,
+		duration: 400,
 		offset: 1250
 	})
 	.setTween(p4ToStart)
@@ -623,7 +623,7 @@ $(document).ready(function(){
 
 
 		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+		var closemodal = document.getElementsByClassName("close")[0];
 
 		// When the user clicks on the button, open the modal 
 		btn1.onclick = function() {
@@ -678,7 +678,7 @@ $(document).ready(function(){
 		}
 
 		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
+		closemodal.onclick = function() {
 		    modal.style.display = "none";
 		    bodycareer.style.overflow = "visible";
 		}
