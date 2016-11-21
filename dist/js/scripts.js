@@ -166,7 +166,7 @@ $(document).ready(function(){
 	//pen effect
 
 		// move the pen body up to connect with the first part
-	TweenMax.set('.part3', {y: -600});
+	TweenMax.set('.part3', {y: -750});
 
 	// hide all headings and text
 	//TweenMax.set(['.parts h2, .parts p'], {autoAlpha: 0});
@@ -182,7 +182,7 @@ $(document).ready(function(){
 		triggerElement: '.part1',
 		triggerHook: 1,
 		offset: 200,
-		duration: 600
+		duration: 750
 	})
 	.setTween(bodyToStart)
 	.addTo(controller);
@@ -192,44 +192,44 @@ $(document).ready(function(){
 	// TweenMax.set('.part4', {y: 289});
 
 	// move part 6 to connect with the body
-	TweenMax.set('.part6', {y: -846});
+	// TweenMax.set('.part6', {y: -846});
 
 	// move 4 and 5 to connect with part 6 again
-	TweenMax.set('.part5', {y: -726}); /* 120 - 846 */
+	// TweenMax.set('.part5', {y: -726}); /* 120 - 846 */
 	TweenMax.set('.part4', {y: -557}); /* 289 - 846 */
 
 	// Create scene for part 6 - move part 6 back to start
-	var p6ToStart = new TweenMax.to('.part6', 1, {y:0, ease:Linear.easeNone});
+	// var p6ToStart = new TweenMax.to('.part6', 1, {y:0, ease:Linear.easeNone});
 
-	var p6ToStartScene = new ScrollMagic.Scene({
-		triggerElement: '.part1',
-		triggerHook: 1,
-		duration: 846,
-		offset: 1250
-	})
-	.setTween(p6ToStart)
-	.addTo(controller);
+	// var p6ToStartScene = new ScrollMagic.Scene({
+	// 	triggerElement: '.part1',
+	// 	triggerHook: 1,
+	// 	duration: 846,
+	// 	offset: 1250
+	// })
+	// .setTween(p6ToStart)
+	// .addTo(controller);
 
 	// Create scene for part 5 - move part 5 back to start
-	var p5ToStart = new TweenMax.to('.part5', 1, {y:0, ease:Linear.easeNone});
+	// var p5ToStart = new TweenMax.to('.part5', 1, {y:0, ease:Linear.easeNone});
 
-	var p5ToStartScene = new ScrollMagic.Scene({
-		triggerElement: '.part1',
-		triggerHook: 1,
-		duration: 726,
-		offset: 1250
-	})
-	.setTween(p5ToStart)
-	.addTo(controller);
+	// var p5ToStartScene = new ScrollMagic.Scene({
+	// 	triggerElement: '.part1',
+	// 	triggerHook: 1,
+	// 	duration: 726,
+	// 	offset: 1250
+	// })
+	// .setTween(p5ToStart)
+	// .addTo(controller);
 
 	// Create scene for part 4 - move part 4 back to start
 	var p4ToStart = new TweenMax.to('.part4', 1, {y:0, ease:Linear.easeNone});
 
 	var p4ToStartScene = new ScrollMagic.Scene({
 		triggerElement: '.part1',
-		triggerHook: 1,
-		duration: 400,
-		offset: 1250
+		triggerHook: 1.5,
+		duration: 557,
+		offset: 800
 	})
 	.setTween(p4ToStart)
 	.addTo(controller);
@@ -240,12 +240,19 @@ $(document).ready(function(){
 		// build a scene
 		var scene = new ScrollMagic.Scene({
 			triggerElement: this,
-			triggerHook: 0.55
+			triggerHook: 0.6
 		})
 		.setClassToggle(this, 'fade-in')
 		.addTo(controller);
 
 	});
+
+	var cultureimg = $('#culturehead'),
+		cultureh2 = $('.culturetext');
+
+	// Simple Tween
+	TweenLite.from(cultureimg, 1, {x: -200});
+	TweenLite.from(cultureh2, 1, {autoAlpha: 0, delay: 1});
 });
 
 
