@@ -1,0 +1,75 @@
+//contact form
+
+form{
+	&:focus{
+    outline: -webkit-focus-ring-color auto 5px;
+	}
+	&.form-horizontal{
+		width:483px;
+		margin-left: 2px;
+	}
+	.form-group{
+		.contact-msg{  
+			margin: 0;
+			height: 100px!important;
+			resize: none;
+			overflow: auto;
+			}
+		.form-control{
+			outline: 0;
+		    display: inline-block;
+		    width: 100%;
+		    height: 34px;
+		    padding: 6px 5px;
+		    font-size: 12px;
+		    line-height: 1.42857143;
+		    color: #555;
+		    background-color: #fff;
+		    background-image: none;
+		    -webkit-box-shadow: none;
+		    border-color: #bdc3c5;
+		    box-shadow: none;
+		    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+		    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		    border: none;
+		    border-bottom: 1px solid #cacaca;
+		    border-radius: 0;
+			    &:focus{
+			    border-color: #2074b9;
+			    outline: 0;
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+			    }
+		}
+	}
+
+	.btn-submit{
+		    border: none;
+		    padding: 10px;
+		    color: #ccc;
+		    background-color: #efefef;
+	}
+		
+}
+
+
+.apply-btn{ 
+        padding: 7px;
+        background: #2074b9;
+        border: 1px solid #2074b9;
+        border-radius: 2px;
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.4rem;
+        }
+        &:hover{
+            background: #3180c1;
+            border: 1px solid #2074b9;
+        }
+        &.contact-apply{
+        	margin-top:30px;
+        	padding: 8px 20px;
+        }
+}

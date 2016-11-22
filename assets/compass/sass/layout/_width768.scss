@@ -110,21 +110,27 @@ h1,
 
 .parts p{
     font-size:1.4rem;
+    width:25%;
+    margin: 0 0 0 30%;
 }
 
 .parts h2{
     font-size:1.8rem;
+    width:35%;
 }
 
 .parts li.part2 {
-    background-position: 50% -393px;
+    background-position: 49% -393px;
 }
 
 .parts li.part4 {
-    background-position: 50% -699px;
+    background-position: 49% -699px;
+    margin-top:-9%;
     }
 
-
+.parts li.part3 {
+    margin-top:13%;
+    }
    
 }
 

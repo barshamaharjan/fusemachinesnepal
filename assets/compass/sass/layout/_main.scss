@@ -361,10 +361,10 @@ body {
 
     //culture
     #cultureheader{
-        background: #76c897;
+        background: #f1f1f1;
         text-align: center;
         .culturetext{
-        color:#fff; 
+        color:#6b6b6b; 
         }
     }
 
@@ -390,7 +390,7 @@ body {
     }
     .parts h2 {
         width: 37%;
-        margin: 0;
+        margin: 8px 0 0 0;
         float: left;
         text-align: right;
         vertical-align: top;
@@ -398,16 +398,16 @@ body {
     .parts p {
         font-size: 18px;
         width: 30%;
-        margin: 0 0 0 28%;
+        margin: 12px 0 0 28%;
         float: left;
-        text-align: left;
+        text-align: justify;
     }
     .parts li.part1 {
-        background-position: 50% -82px;
+        background-position: 49% -82px;
         min-height: 300px;
     }
     .parts li.part2 {
-        background-position: 50% -416px;
+        background-position: 49% -416px;
         min-height: 300px;
     }
 
@@ -423,16 +423,16 @@ body {
         min-height: 430px;
 
     }
-    .parts li.part5 {
-        background-position: 50% -1275px;
-        min-height: 270px;
-        z-index: 2;
-        position: relative;
-    }
-    .parts li.part6 {
-        background-position: 50% -1730px;
-        min-height: 250px;
-    }
+    // .parts li.part5 {
+    //     background-position: 50% -1275px;
+    //     min-height: 270px;
+    //     z-index: 2;
+    //     position: relative;
+    // }
+    // .parts li.part6 {
+    //     background-position: 50% -1730px;
+    //     min-height: 250px;
+    // }
 
     /* =Fade In Text */
     .parts li h2,
@@ -617,3 +617,8 @@ body#bodycareer{
             }
         
       }
+
+      //contact
+      // .contact-body{
+      //     background-color:#76c897;
+      // }
