@@ -1,18 +1,29 @@
 
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 321px) and (max-width: 470px) {
 	   /* =Parallax */
 	 .front-text{
     	top:34%;
     }
+    
+    /*=about page*/
+    .slide{
+        .slide-wrapper{
+            top: 60%;
+        }
+    }
+
+
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 800px) {
+@media only screen and (min-width: 480px) and (max-width: 750px) {
     /*=logo*/
     .fmnlogo{
         .fmn-logo {
-            background-size: 57%;
-            margin: 28px 30px;
+            &.slide-aboutbg{
+                background-size: 57%;
+                margin: 28px 30px;
+            }
         }
     }
 
