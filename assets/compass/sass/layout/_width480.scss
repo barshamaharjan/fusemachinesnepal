@@ -7,7 +7,39 @@
 
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+    /*=logo*/
+    .fmnlogo{
+        .fmn-logo {
+            background-size: 57%;
+            margin: 28px 30px;
+        }
+    }
+
+    /*=Menu*/
+    .menu-slide{
+        height:100vh;
+    } 
+
+    /*=Footer*/
+    .footer-container{
+        .footer-wrapper{
+            .one-wrapper{
+                top: 25%;
+                left: 1%;
+            }
+            .two-wrapper{
+                z-index:1;
+                left: 42%;
+                top: 24%;
+            }
+            .three-wrapper{
+                text-align:left;
+                top: 24%;
+                left: 66%;
+            }
+        }
+    }
     /* =Parallax */
         #canvas-space{
             display:initial!important;
@@ -19,24 +51,84 @@
           }
         }
 
-    /* =Header */
-body.main-body{
-    font: 16px/1.5 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #294C67;
-    overflow: hidden;
-    height: 100%;
-    transition: all 1s linear;
-    &.is-active {
-    color:#fff;
-    background-color:#7398ff;
-    
-    } 
-}
+    /*=about page*/
+        .slide{
+            .slide-wrapper{
+                    text-align:center;
+                    padding: 0 50px;
+                    width: 40%;
+                    top: 50%;
+                    left: 23%;
+                        h2{
+                            font-size: 2.5rem;
+                            margin-bottom: 24px;
+                        }
+                        p{
+                            font-size:1.2rem;
+                        }
+                        &.slide-aboutbg{
+                            text-align:center;
+                            top: 56%;
+                            left: 18%;
+                            width: 52%;    
+                        }
+                    }
+            .img{
+                background-size: 50%;
+                left: 40%;
+                top: 40%;
+                &.img-aboutbg{
+                    background-size:50%;
+                    top: 60%;
+                    left: 46%;
+                }
+            }
+        }
 
-h1, h2, h3, h4 {
-  font-weight: 700;
-}
+        /*=Contact Page*/ 
+        #contact-header{
+            padding: 50px 0;
+            .contact-form{
+                width:40%;
+                padding: 6% 5% 0 5%;
+            }
+            .contact-details{
+                width:50%;
+                padding: 11% 0 0 0;
+                ul{
+                    li{
+                        width:60%;
+                        margin-bottom:35px;
+                    }
+                }
+            }
+        }
+
+        form{
+            &.form-horizontal{
+                width:240px;
+            }
+        }
+
+
+    /* =Header */
+// body.main-body{
+//     font: 16px/1.5 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
+//     background-color: #ffffff;
+//     color: #294C67;
+//     overflow: hidden;
+//     height: 100%;
+//     transition: all 1s linear;
+//     &.is-active {
+//     color:#fff;
+//     background-color:#7398ff;
+    
+//     } 
+// }
+
+// h1, h2, h3, h4 {
+//   font-weight: 700;
+// }
 
 h1 {
     font-size: 40px;

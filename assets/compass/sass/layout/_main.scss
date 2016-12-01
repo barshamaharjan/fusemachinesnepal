@@ -67,6 +67,9 @@ body {
     overflow-y: visible;
     overflow-x: hidden;
     color:#545454;
+    &.xs-view{
+        overflow-x: hidden!important;
+    }
 }
 
 .wrapper {
@@ -79,6 +82,15 @@ body {
    Author's custom styles
    ========================================================================== */
 /* =Main */
+// .main{
+//     width:90%;
+// }
+#main {
+    position: relative;
+    background-color: #FFF;
+    width:90%;
+}
+
 #intro {
     opacity:0;
     text-align: center;
@@ -143,10 +155,6 @@ body {
     }
 }
 
-#main {
-    position: relative;
-    background-color: #FFF;
-}
 .bcg-parallax {
     padding: 150px 0;
     color: #fff;
@@ -178,7 +186,11 @@ body {
     position: relative;
     z-index: 2;
 }
-//team page
+
+
+
+
+/*=about page*/
 
 #slide04{
     background-color:#fff;
@@ -215,7 +227,8 @@ body {
         width: 100%;
         left: 0;
         background: url(../assets/img/about-design2.png) no-repeat;
-        background-size: 100%;
+        // background-size: 100%;
+        background-size: cover;
         background-position: center;
     }
     .slide-wrapper{
@@ -237,7 +250,8 @@ body {
         width: 100%;
         left: 0;
         background: url(../assets/img/img_background.jpg) no-repeat;
-        background-size: 100%;
+        // background-size: 100%;
+        background-size: cover;
         background-position: center top;
     }
     .slide-wrapper{
@@ -260,14 +274,16 @@ body {
     }
     .slide-wrapper{
             position: absolute;
-            top: 37%;
-            left: 55%;
+            text-align:center;
+            top: 45%;
+            left: 0%;
+            padding: 0 50px;
                 h2{
-                    font-size: 3.8rem;
-                    margin-bottom: 24px;
+                    font-size: 2rem;
+                    margin-bottom: 10px;
                 }
                 p{
-                    font-size:1.5rem;
+                    font-size:1.2rem;
                 }
             }
         .img{
@@ -277,14 +293,15 @@ body {
             height:418px;
             width:700px;
             background: url('../assets/img/crossreveal/about-replace.png') no-repeat top left;
-            transform:translate(-90%,-43%);
+            transform:translate(-15%,-40%);
+            background-size:30%;
             &.img-aboutbg{
                 height: 100%;
-                top: 45%;
-                left: 117%;
-                background-size: 65%;
+                top: 66%;
+                left: 40%;
+                background-size: 55%;
                 width: 91%;
-            }
+                    }
     }
 }
 
@@ -400,11 +417,13 @@ body {
         width: 30%;
         margin: 12px 0 0 28%;
         float: left;
-        text-align: justify;
+        text-align: left;
     }
     .parts li.part1 {
-        background-position: 49% -82px;
+        // background-position: 49% -82px;
+        background-position: 49% -11px;
         min-height: 300px;
+        margin-bottom:15%;
     }
     .parts li.part2 {
         background-position: 49% -416px;
@@ -423,16 +442,6 @@ body {
         min-height: 430px;
 
     }
-    // .parts li.part5 {
-    //     background-position: 50% -1275px;
-    //     min-height: 270px;
-    //     z-index: 2;
-    //     position: relative;
-    // }
-    // .parts li.part6 {
-    //     background-position: 50% -1730px;
-    //     min-height: 250px;
-    // }
 
     /* =Fade In Text */
     .parts li h2,
@@ -461,6 +470,53 @@ body {
     }
 
 
+    //employee list
+    .section-employee{
+        margin-left: 18%;
+        margin-right: 9.2%;
+        margin-top: -20%;
+        .we-are{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .e-list{
+            font-size: 16px; 
+            display: inline-block;
+            margin-bottom: 8px;
+            width: calc(10% - 6px);
+            margin-right: 8px;
+            text-decoration: none;
+            // &:nth-of-type(2n){
+            //     margin-right: 8px;
+            // }
+            // &:nth-of-type(4n){
+            //     margin-right: 0;
+            // }
+            img{
+                border: none;
+                max-width: 100%;
+                height: auto;
+                display: block;
+                background: #ccc;
+                transition: transform .2s ease-in-out;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+            figure {
+              margin: 0;
+              overflow: hidden;
+            }
+            figcaption {
+              margin-top: 15px;
+            }
+        }
+        h2{
+           margin-left: -10%;
+           margin-bottom: 4%;
+
+        }
+    }
 
 
 
@@ -618,7 +674,95 @@ body#bodycareer{
         
       }
 
-      //contact
-      // .contact-body{
-      //     background-color:#76c897;
-      // }
+      // contact
+    #contact-header{
+        position: relative;
+        padding: 50px 0;
+        .contact-form{
+            width:50%;
+            float: left;
+            padding: 6% 6% 0 10%;
+            .contact-text{
+                text-decoration:none;
+                color:#636363;
+            }
+        }
+        .contact-details{
+            width:50%;
+            float: left;
+            font-size: 1.3rem;
+            padding: 11% 0 0 0;
+            ul{
+                list-style:none;
+                li{
+                    width:140px;
+                    margin-bottom:35px;
+                    display:inline-block;
+                }
+            }
+        }
+        &:before{
+            display: table;
+            content: "";
+        }
+        &:after{
+            display: table;
+            content: "";
+            clear: both;
+        }
+    }
+
+
+        body.main-body{
+            font: 16px/1.5 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #294C67;
+            overflow: hidden;
+            height: 100%;
+            transition: all 1s linear;
+            &.is-active {
+            color:#fff;
+            background-color:#7398ff;
+            
+            } 
+        }
+
+        h1, h2, h3, h4 {
+          font-weight: 700;
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            position: absolute;
+            top: 54%;
+            left: 47%;
+            font-weight: 300;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-transform: translate(-60%, -150%);
+                    transform: translate(-60%, -150%);
+        }
+        #lab {
+            position: absolute;
+            top: 41%;
+            left: 51%;
+            -webkit-transform: translate(-50%, -54%);
+                    transform: translate(-50%, -54%);
+            width: auto;
+            // height: 675px;
+            overflow:hidden;
+            height:100vh;
+        }
+        #stage,
+        #Petr,
+        #Coin,
+        h1,
+        #BulbIdea {
+            visibility: hidden;
+            opacity: 0;
+        }
+        #PaperText text {
+            font-weight: 700;
+            font-size: 18px;
+        }

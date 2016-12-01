@@ -1,4 +1,11 @@
 @media only screen and (min-width: 768px) and (max-width: 1390px) {
+     /* =Logo */
+    .fmnlogo{
+        .fmn-logo {
+        background-size: 63%;
+        margin: 32px 40px;
+        }
+    }
 	/* =Menu */
 	.menu-slide{
 		width: 30%;
@@ -6,56 +13,131 @@
     	border-left:1px solid #ccc;
 	}
 
-    /* =General */
+
+    /*=Footer*/
+    .footer-container{
+        .footer-wrapper{
+            .one-wrapper{
+                top: 25%;
+                left: 11%;
+            }
+            .two-wrapper{
+                z-index:1;
+                left: 45%;
+                top: 24%;
+            }
+            .three-wrapper{
+                text-align:left;
+                top: 24%;
+                left: 72%;
+            }
+        }
+    }
+
+    /* =About page */
+    .slide{
+        .slide-wrapper{
+            text-align:left;
+            width: 34%;
+            top: 33%;
+            left: 48%;
+                h2{
+                    font-size: 2.8rem;
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-size:1.3rem;
+                }
+                &.slide-aboutbg{
+                    text-align: left;
+                    top: 40%;
+                    left: 10%;
+                    width: 26%;    
+                }
+            }
+        .img{
+            background-size: 60%;
+            left: 21%;
+            top: 51%;
+            &.img-aboutbg{
+                background-size: 50%;
+                top: 51%;
+                left: 59%;
+            }
+        }
+    }
+
+    #slide01{
+        .slide-bg01{
+            background-size: 80%;
+        }
+    }
+
+    #slide02{
+        .slide-bg02{
+            background-size: 100%;          
+        }
+    }
+
+    #slide02{
+        .slide-bg02{
+            background-size: 100%;    
+        }
+    }
+
+    /*=Contact Page*/ 
+    #contact-header{
+        padding: 50px 0;
+        .contact-form{
+            width:30%;
+            padding: 6% 10% 0 10%;
+        }
+        .contact-details{
+            width:45%;
+            padding: 10.7% 0 0 4%;
+            ul{
+                li{
+                    width:36%;
+                    margin-bottom:35px;
+                }
+            }
+        }
+    }
+
+    form{
+        &.form-horizontal{
+            width:350px;
+        }
+    }
+
 
     /* =Header */
 
     /* =Footer */
     ul#scene{
         li{
-        	font-size:5rem!important;
+            font-size:5rem!important;
           }
         }
     #canvas-space{
         display:initial!important;
     }
 
-    .slide{
-    	.img{
-    		top: 43%;
-    		left: 60%;
-    	}
-    	.slide-wrapper{
-    		top: 23%;
-            left: 53%;
-    		width: 35%;
-    		&.slide-aboutbg{
-                top: 35%;
-			    left: 13%!important;
-			    text-align: left!important;
-			    width: 22%;
-            }
-    		&.slide-unpinned{
-		        left:35%;
-		        text-align:left;
-    			}
-    	}
-    }
 
 
-body.main-body{
-    font: 16px/1.5 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #294C67;
-    overflow: hidden;
-    height: 100%;
-    transition: all 1s linear;
-    &.is-active {
-    color:#fff;
-    background-color:#7398ff;
+// body.main-body{
+//     font: 16px/1.5 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
+//     background-color: #ffffff;
+//     color: #294C67;
+//     overflow: hidden;
+//     height: 100%;
+//     transition: all 1s linear;
+//     &.is-active {
+//     color:#fff;
+//     background-color:#7398ff;
     
-    } 
-}
+//     } 
+// }
 
 h1, h2, h3, h4 {
   font-weight: 700;
@@ -105,7 +187,7 @@ h1,
 }
 
 .parts li{
-    background-size: 17% auto;
+    background-size: 13% auto;
 }
 
 .parts p{
@@ -119,17 +201,25 @@ h1,
     width:35%;
 }
 
+.parts li.part1 {
+    background-position: 49% -46px;
+    min-height: 218px;
+    margin-bottom: 15%;
+}
+
 .parts li.part2 {
-    background-position: 49% -393px;
+    background-position: 49% -320px;
+    margin-bottom: 0%;
+    min-height: 201px;
 }
 
 .parts li.part4 {
-    background-position: 49% -699px;
-    margin-top:-9%;
+    background-position: 49% -575px;
+    margin-top:-16%;
     }
 
 .parts li.part3 {
-    margin-top:13%;
+    margin-top:22%;
     }
    
 }

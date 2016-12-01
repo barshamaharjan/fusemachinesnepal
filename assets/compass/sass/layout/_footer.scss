@@ -1,5 +1,5 @@
-
 .footer-container {
+    position:relative;
     text-align:left;
     background-color:#002235;
     height:40vh;
@@ -26,6 +26,8 @@
             }
         .one-wrapper{
             position:absolute;
+            top:54%;
+            left:8%;
             img{
                 height:32px;
                 filter: hue-rotate(0) saturate(0) brightness(200%);
@@ -37,11 +39,14 @@
         }
         .two-wrapper{
             position:absolute;
-            left:45%;
+            left:25%;
+            z-index:-1;
         }
         .three-wrapper{
+            text-align:center;
             position:absolute;
-            left:73%;
+            top:16%;
+            left:23%;
         }
     }
     &.career-footer{
