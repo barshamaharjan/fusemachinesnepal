@@ -19,6 +19,30 @@ $(document).ready(function(){
 	.setPin('#modalspace2')
 	.addTo(controller);
 
+	var pintopmenu3 = new ScrollMagic.Scene({
+		triggerElement: '#modalspace3',
+		triggerHook : 0,
+		duration: '300%'
+	})
+	.setPin('#modalspace3')
+	.addTo(controller);
+
+	var pintopmenu4 = new ScrollMagic.Scene({
+		triggerElement: '#modalspace4',
+		triggerHook : 0,
+		duration: '300%'
+	})
+	.setPin('#modalspace4')
+	.addTo(controller);
+
+	var pintopmenu5 = new ScrollMagic.Scene({
+		triggerElement: '#modalspace5',
+		triggerHook : 0,
+		duration: '300%'
+	})
+	.setPin('#modalspace5')
+	.addTo(controller);
+
     //loader
 
     var tl = new TimelineLite({paused: true}),
@@ -612,7 +636,7 @@ $(document).ready(function(){
 
 
 		// Get the <span> element that closes the modal
-		var closemodal = document.getElementsByClassName("close")[0];
+		var closemodal = document.getElementsByClassName("closemodal")[0];
 
 		// When the user clicks on the button, open the modal 
 		btn1.onclick = function() {
@@ -673,12 +697,12 @@ $(document).ready(function(){
 		}
 
 		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == modal) {
-		        modal.style.display = "none";
-		        bodycareer.style.overflow = "visible";
-		    }
-		}
+		// window.onclick = function(event) {
+		//     if (event.target == modal) {
+		//         modal.style.display = "none";
+		//         bodycareer.style.overflow = "visible";
+		//     }
+		// }
 
 })(jQuery);
 

@@ -472,51 +472,108 @@ body {
 
     //employee list
     .section-employee{
-        margin-left: 18%;
-        margin-right: 9.2%;
-        margin-top: -20%;
-        .we-are{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .e-list{
-            font-size: 16px; 
-            display: inline-block;
-            margin-bottom: 8px;
-            width: calc(10% - 6px);
-            margin-right: 8px;
-            text-decoration: none;
-            // &:nth-of-type(2n){
-            //     margin-right: 8px;
-            // }
-            // &:nth-of-type(4n){
-            //     margin-right: 0;
-            // }
-            img{
-                border: none;
-                max-width: 100%;
-                height: auto;
-                display: block;
-                background: #ccc;
-                transition: transform .2s ease-in-out;
-                &:hover{
-                    transform: scale(1.3);
+        margin: -20% 8% 0 11%;
+            .caption-style {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                &:before,&:after{
+                    display: table;
+                    content: "";
+                    clear:both;
                 }
+                    li {
+                    float: left;
+                    padding: 0px;
+                    position: relative;
+                    overflow: hidden;
+                        img {
+                            margin: 30px 15px 3px;
+                            padding: 0 30px;
+                            height: 180px;
+                            border-radius: 50%;
+                            }
+                       .caption {
+                            .caption-text {
+                                    h3{
+                                        margin-bottom:0;
+                                    }
+                                    p{
+                                        margin-top:3px;
+                                    }
+                                }
+                            }
+                    }
             }
-            figure {
-              margin: 0;
-              overflow: hidden;
-            }
-            figcaption {
-              margin-top: 15px;
-            }
-        }
-        h2{
-           margin-left: -10%;
-           margin-bottom: 4%;
-
-        }
     }
+
+
+
+
+        //employee list previous code
+    // .section-employee{
+    //     margin: -20% 9.2% 95% 18%;
+    //         .caption-style {
+    //             list-style-type: none;
+    //             margin: 0px;
+    //             padding: 0px;
+    //                 li {
+    //                 float: left;
+    //                 padding: 0px;
+    //                 position: relative;
+    //                 overflow: hidden;
+    //                     img {
+    //                         margin: 0px;
+    //                         padding: 0px;
+    //                         float: left;
+    //                         z-index: 4;
+    //                         transition: all 0.25s ease-in-out;
+    //                         -webkit-transition: all 0.25s ease-in-out;
+    //                         -moz-transition: all 0.25s ease-in-out;
+    //                         -o-transition: all 0.25s ease-in-out;
+    //                         -ms-transition: all 0.25s ease-in-out;
+    //                         &:hover{
+    //                             opacity: 1;
+    //                             transform: scale(1.15,1.15);
+    //                             -webkit-transform: scale(1.15,1.15);
+    //                             }
+    //                         }
+    //                    .caption {
+    //                         cursor: pointer;
+    //                         position: absolute;
+    //                         opacity: 0;
+    //                         -webkit-transition: all 0.45s ease-in-out;
+    //                         -moz-transition: all 0.45s ease-in-out;
+    //                         -o-transition: all 0.45s ease-in-out;
+    //                         -ms-transition: all 0.45s ease-in-out;
+    //                         transition: all 0.45s ease-in-out;
+    //                         &:hover{
+    //                             opacity: 1;
+    //                             }
+    //                         .blur {
+    //                             background-color: rgba(0,0,0,0.65);
+    //                             height: 150px;
+    //                             width: 150px;
+    //                             z-index: 5;
+    //                             position: absolute;
+    //                         }
+    //                         .caption-text {
+    //                                 z-index: 10;
+    //                                 color: #fff;
+    //                                 position: absolute;
+    //                                 width: 140px;
+    //                                 height: 130px;
+    //                                 padding: 10px 5px;
+    //                                 text-align: center;
+    //                                 h1{
+    //                                     text-transform: uppercase;
+    //                                     font-size: 24px;
+    //                                 }
+    //                             }
+    //                         }
+    //                 }
+    //         }
+    // }
 
 
 
